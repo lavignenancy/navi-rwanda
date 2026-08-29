@@ -2,6 +2,7 @@ from fastapi import FastAPI
 
 from slowapi import _rate_limit_exceeded_handler
 from slowapi.errors import RateLimitExceeded
+from app.core.security.headers import SecurityHeadersMiddleware
 
 from app.core.rate_limit import limiter
 from fastapi.middleware.cors import CORSMiddleware
@@ -20,6 +21,7 @@ app = FastAPI(
 )
 
 app.add_middleware(
+    SecurityHeadersMiddleware,
     CORSMiddleware,
     allow_origins=[
         "*"],
