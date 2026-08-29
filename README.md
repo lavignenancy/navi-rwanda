@@ -218,32 +218,6 @@ Potential areas include:
 
 The initial focus remains **Rwanda**.
 
----
-
-## 🧑🏽‍💻 Learning Through Building
-
-NAVI is also a practical software engineering project.
-
-The development process is intentionally being used to understand the fundamentals behind modern software systems, including:
-
-* API design
-* Backend architecture
-* Databases
-* Authentication
-* Authorization
-* Security
-* Testing
-* Git and version control
-* Frontend development
-* AI integration
-* Information retrieval
-* System design
-
-The objective is not simply to make the application work.
-
-It is to understand **why it works**.
-
----
 
 ## 🚀 Running the Backend
 
