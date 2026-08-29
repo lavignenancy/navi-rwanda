@@ -33,4 +33,20 @@ class UserRepository:
         return user
 
 
+    def get_by_id(
+        self,
+        db: Session,
+         user_id: str,
+    ) -> User | None:
+
+     statement = select(User).where(
+        User.id == user_id
+    )
+
+     result = db.execute(statement)
+
+     return result.scalar_one_or_none()
+    
+
+
 user_repository = UserRepository()

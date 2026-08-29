@@ -7,5 +7,6 @@ dependencies = [
     "psycopg[binary]>=3.3.4",
     "pwdlib[argon2]>=0.3.1",
     "pyjwt>=2.13.0",
+    "slowapi>=0.1.10",
     "sqlalchemy>=2.0.52",
 ]
